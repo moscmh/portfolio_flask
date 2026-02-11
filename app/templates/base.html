@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% if title %}
+        <title>{{ title }} - Mos</title>
+        {% else %}
+        <title>Welcome to Mos's Webpage</title>
+        {% endif %}
+    </head>
+
+    <header>
+        <nav>
+            <a href="{{ url_for('index') }}">Home</a>
+        </nav>
+        <hr>
+        <h1>
+            {% if header %}
+            {{ header }}
+            {% else %}
+            Mossy
+            {% endif %}
+        </h1>
+    </header>
+    <hr>
+    <body>
+        {% block content %}{% endblock%}
+    </body>
+</html>
