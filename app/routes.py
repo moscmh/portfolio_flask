@@ -5,6 +5,7 @@ from flask import render_template, url_for
 # import plotly
 # import plotly.express as px
 
+
 @app.route('/')
 @app.route('/index')
 def index():

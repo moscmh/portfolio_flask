@@ -1,0 +1,6 @@
+// Override variables FIRST
+$primary: #1a73e8;
+$border-radius: 1rem;
+
+// Then import Bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
